@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Layout</title>
+    <style>
+
+        body {
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 50px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .header img {
+            height: 70px;
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+        }
+
+        .search input {
+            padding: 5px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .nav {
+            background-color: #fff;
+            padding: 15px 50px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            padding: 5px 0;
+            padding-left: 100px;
+        }
+
+        .nav a:hover {
+            border-bottom: 2px solid #007bff;
+        }
+
+        .breadcrumb {
+            padding: 10px 50px;
+            background-color: white;
+            border-bottom: 1px solid #ddd;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .breadcrumb a {
+            text-decoration: none;
+            color: #666;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .navbar a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .navbar a.active {
+            color: #e74c3c;
+            border-bottom: 2px solid #e74c3c;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        .section-title {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            color: rgba(0, 0, 0, 0.28);
+        }
+
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .grid-item {
+            width: 18%;
+            height: 350px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            background-color: #e6e6e6;
+        }
+
+        .design-categories {
+            display: flex;
+        }
+
+        .design-list {
+            margin-right: 50px;
+            border-left: 2px solid #488bc4;
+            padding-left: 10px;
+        }
+
+        .design-list a {
+            padding-top: 30px;
+            display: block;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .design-list a.active {
+            color: #e74c3c;
+        }
+
+        .design-images img {
+            max-width: 700px; /* 将图片最大宽度设置为200px */
+            margin-left: 10px; /* 可选：保留图片之间的间距 */
+        }
+
+        .design-images {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center; /* 可选：使图片垂直居中对齐 */
+            margin-left: auto; /* 可选：如果需要与其他元素有间距，则使用此属性 */
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="header">
+    <div style="display: flex;">
+        <img src="image/1.jpg" alt="学校标识" style="width: 200px;">
+        <img src="image/2.jpg" alt="学院标识">
+    </div>
+
+    <div class="search">
+        <input type="text" placeholder="搜索">
+    </div>
+</div>
+<div class="nav">
+    <a href="index.html">首页</a>
+    <a href="detail.html">教学信息</a>
+    <a href="#">实验室建设</a>
+    <a href="#">招生就业</a>
+    <a href="#">学生天地</a>
+    <a href="#">个人天地</a>
+</div>
+    <div class="navbar">
+        <a href="#" class="active">教工团队</a>
+        <a href="#">毕业相册</a>
+        <a href="#">杰出校友</a>
+    </div>
+
+
+
+
+<div class="container">
+    <div class="section-title">院友风采</div>
+    <div class="grid">
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+    </div>
+</div>
+<div class="container">
+    <div class="section-title">学生设计</div>
+    <div class="design-categories">
+        <div class="design-list">
+            <a href="#">包装设计</a>
+            <a href="#" class="active">工业设计</a>
+            <a href="#">媒体设计</a>
+            <a href="#">平面设计</a>
+            <a href="#">影像设计</a>
+        </div>
+        <div class="design-images">
+            <img src="image/6.jpg" alt="设计图1">
+            <img src="image/7.jpg" alt="设计图2">
+            <img src="image/8.jpg" alt="设计图3">
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

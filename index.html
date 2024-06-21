@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学院网站</title>
+    <style>
+        body {
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 50px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .header img {
+            height: 70px;
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+        }
+
+        .search input {
+            padding: 5px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .nav {
+            background-color: #fff;
+            padding: 15px 50px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            padding: 5px 0;
+            padding-left: 100px;
+        }
+
+        .nav a:hover {
+            border-bottom: 2px solid #007bff;
+        }
+
+        .breadcrumb {
+            padding: 10px 50px;
+            background-color: white;
+            border-bottom: 1px solid #ddd;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .breadcrumb a {
+            text-decoration: none;
+            color: #666;
+        }
+
+        .content {
+            padding: 20px 50px;
+        }
+
+        .video {
+            margin-bottom: 20px;
+
+        }
+
+        .video video {
+            width: 100%;
+            border: 1px solid #ddd;
+        }
+
+        .notification {
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .notification .left,
+        .notification .right {
+            width: 48%;
+        }
+
+        .notification h4 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .notification .left ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .notification .left ul li {
+            margin-bottom: 10px;
+            color: #333;
+            line-height: 1.4;
+        }
+
+        .notification .right {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .notification .right img {
+            width: 32%;
+            height: auto;
+            border: 1px solid #ddd;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="header">
+   <div style="display: flex;">
+    <img src="image/1.jpg" alt="学校标识" style="width: 200px;">
+    <img src="image/2.jpg" alt="学院标识">
+</div>
+
+    <div class="search">
+        <input type="text" placeholder="搜索">
+    </div>
+</div>
+<div class="nav">
+    <a href="index.html">首页</a>
+    <a href="detail.html">教学信息</a>
+    <a href="#">实验室建设</a>
+    <a href="#">招生就业</a>
+    <a href="#">学生天地</a>
+    <a href="#">个人天地</a>
+</div>
+<div class="breadcrumb">
+    <a href="#">首页</a> &gt; <a href="#">页面2</a> &gt; <a href="#">页面3</a> &gt; <a href="#">页面4</a>
+</div>
+<div class="content">
+    <div class="video">
+        <video controls style="height: 500px">
+            <source src="video/video.mp4" type="video/mp4">
+            您的浏览器不支持 HTML5 视频播放。
+        </video>
+    </div>
+    <div class="notification">
+        <div class="left">
+            <h4>综合通知</h4>
+            <ul>
+                <li>2024-04-10 2024年人文艺术系学院学术研究生实验</li>
+                <li>2024-04-07 浙龙传媒班第四次工作方案</li>
+                <li>2024-04-07 2024年浙龙大学文本系文学课期版设计期刊</li>
+                <li>2024-04-06 2024人文艺术系学术研究课课期开题会</li>
+                <li>2024-03-26 2024年人文艺术系艺术研究院硕士研究生期讲微课</li>
+            </ul>
+        </div>
+        <div class="right">
+            <h4>学院动态</h4>
+            <img src="image/4.jpg" alt="学院动态1">
+            <img src="image/3.jpg" alt="学院动态2">
+            <img src="image/5.jpg" alt="学院动态3">
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
